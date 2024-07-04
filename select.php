@@ -87,6 +87,8 @@ if($status==false) {
             <td><?= $value["bookurl"] ?></td>
             <td><?= $value["bookcomment"] ?></td>
             <td><?= $value["indate"] ?></td>
+            <td><a href="detail.php?id=<?= $value['id'] ?>">更新</a></td> <!-- 更新リンク -->
+            <td><a href="delete.php?id=<?= $value['id'] ?>" onclick="return confirm('本当に削除しますか？')">削除</a></td> <!-- 削除リンク --> 
           </tr>
         <?php endforeach; ?>
       <?php else: ?>
